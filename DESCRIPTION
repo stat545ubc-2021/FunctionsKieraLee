@@ -1,16 +1,17 @@
 Package: SummaryStatstics
-Title: What the Package Does (One Line, Title Case)
+Title: Creating Summary Statistics for Dataframes 
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Kiera",
+           family = "Lee",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+           email = "kiera.lee@bell.net")
+Description: The goal of SummaryStatstics is to help the user efficiently create summary statistics for the data they are analyzing With the use of SummaryStastics, the user can use the provided functions to get necessary data.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
