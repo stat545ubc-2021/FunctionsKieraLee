@@ -12,7 +12,7 @@ necessary data.
 
 This package contains the following functions
 
-1.  `summary_stastics()`  
+1.  `summary_statistics()`  
     A functions that produces a tibble of size 6x3 with the summary
     statistics mean, median, standard deviation of a numerical variable,
     based on a grouping.
@@ -25,7 +25,7 @@ You can install the released version of SummaryStatstics from
 [Github](https://github.com) with:
 
 ``` r
-devtools::install_github("kieraaleee/SummaryStatstics", ref = "0.1.0")
+devtools::install_github("stat545.stat.ubc.ca/FunctionsKieraLee", ref = "0.1.0")
 ```
 
 ## Example

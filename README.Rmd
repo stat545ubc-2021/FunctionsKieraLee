@@ -1,5 +1,5 @@
 ---
-Title: Summary Stastics Package
+Title: Summary Statistics Package
 output: github_document
 Last Updated: November 16th 2021
 ---
@@ -12,7 +12,7 @@ The goal of SummaryStatstics is to help the user efficiently create summary stat
 
 This package contains the following functions 
 
-1. `summary_stastics()`  
+1. `summary_statistics()`  
 A functions that produces a tibble of size 6x3 with the summary statistics mean, median, standard deviation of a numerical variable, based on a grouping. 
 
 Please see the vignette for more detailed explanation of each function. 
@@ -22,7 +22,7 @@ Please see the vignette for more detailed explanation of each function.
 You can install the released version of SummaryStatstics from [Github](https://github.com) with:
 
 ``` r
-devtools::install_github("kieraaleee/SummaryStatstics", ref = "0.1.0")
+devtools::install_github("stat545.stat.ubc.ca/FunctionsKieraLee", ref = "0.1.0")
 ```
 
 ## Example
