@@ -6,28 +6,34 @@ Last Updated: November 16th 2021
 
 # SummaryStatstics
 
-SummaryStatstics is a package made by Kiera Lee for STAT545B at The University of British Columbia. SummaryStatstics was made with the `devtools` package. 
+`SummaryStatstics` is a package made by Kiera Lee for STAT545B at The University of British Columbia. `SummaryStatstics` was made with the `devtools` package. 
 
-The goal of SummaryStatstics is to help the user efficiently create summary statistics for the data they are analyzing With the use of SummaryStastics, the user can use the provided functions to get necessary data. 
+The goal of `SummaryStatstics` is to help the user efficiently create summary statistics for the data they are analyzing. With the use of `SummaryStastics`, the user can use the provided functions to get necessary data. 
 
 This package contains the following functions 
 
 1. `summary_statistics()`  
-A functions that produces a tibble of size 6x3 with the summary statistics mean, median, maximum value, minimum value, and standard deviation of a numerical variable, based on a grouping. 
+A functions that produces a tibble of size 6x3 with the summary statistics mean, median, maximum value, minimum value, and standard deviation of a numerical variable, based on a grouping, both contained within a dataframe. 
 
-Please see the vignette for more detailed explanation of each function. 
+Please see `?summary_statsitics` for a more detailed explanation of the function. 
 
 ## Installation
 
-You can install the released version of SummaryStatstics from [Github](https://github.com) with:
+You can install the most up-to-date released version of `SummaryStatstics` from [Github](https://github.com) with:
 
 ``` r
 devtools::install_github("stat545ubc-2021/FunctionsKieraLee")
 ```
 
+Following installation, this package should be loaded into R or Rstudio with: 
+
+``` r
+library(SummaryStatstics)
+```
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to solve a common problem, using a simple dataframe, `fruit`:
 
 ```{r example}
 library(SummaryStatstics)

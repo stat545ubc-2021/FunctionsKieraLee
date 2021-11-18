@@ -6,7 +6,7 @@ Authors@R:
            family = "Lee",
            role = c("aut", "cre"),
            email = "kiera.lee@bell.net")
-Description: The goal of SummaryStatstics is to help the user efficiently create summary statistics for the data they are analyzing With the use of SummaryStastics, the user can use the provided functions to get necessary data.
+Description: The goal of SummaryStatstics is to help the user efficiently create summary statistics for the data they are analyzing. With the use of SummaryStatstics, the user can use the provided functions to get necessary data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
