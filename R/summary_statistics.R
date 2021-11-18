@@ -8,9 +8,10 @@
 #' @param y is the column that you will be grouping your data with
 #'
 #' @return 5 columns of summary statistics on x data, with one row for each correlating to the y grouping within the dataset data.
-#' @import dplyr
-#' @import stats
-#' @import datateachr
+#' @importFrom dplyr group_by
+#' @importFrom dplyr summarise
+#' @importFrom stats median
+#' @importFrom stats sd
 #' @export
 summary_statistics <- function (data, x, y) {
   if(!is.numeric(eval(substitute(x), data))) {
@@ -18,8 +19,8 @@ summary_statistics <- function (data, x, y) {
          'You have provided an object of class: ', class(eval(substitute(x), data))[1])
   }
   data %>%
-    group_by({{y}}) %>%
-    summarise(mean = mean({{x}}, na.rm = TRUE),
+    dplyr::group_by({{y}}) %>%
+    dplyr::summarise(mean = mean({{x}}, na.rm = TRUE),
               median = median({{x}}, na.rm = TRUE),
               standard_deviation = sd({{x}}, na.rm = TRUE),
               max = max({{x}}, na.rm = TRUE),
