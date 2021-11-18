@@ -13,8 +13,8 @@ necessary data.
 This package contains the following functions
 
 1.  `summary_statistics()`  
-    A functions that produces a tibble of size 6x3 with the summary
-    statistics mean, median, maximum value, minimum value, and standard
+    A functions that produces a tibble with the summary statistics
+    columns mean, median, maximum value, minimum value, and standard
     deviation of a numerical variable, based on a grouping, both
     contained within a dataframe.
 

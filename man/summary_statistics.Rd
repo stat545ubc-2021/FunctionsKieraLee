@@ -21,6 +21,6 @@ This function will create columns in the dataset calculating the mean, median, s
 deviation, max and min of a variable column based on being grouped by a second column
 }
 \examples{
-fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"), number = c(10,7,45,3,45,67,89,0,12))
-summary_statistics(fruit, fruit_type, number)
+letter <- data.frame(type = c("A","A","A", "O", "O","O","P","P","P"),number =c(1,7,4,3,45,7,9,0,2))
+summary_statistics(letter, number, type)
 }

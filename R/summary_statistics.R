@@ -13,8 +13,8 @@
 #' @importFrom stats median
 #' @importFrom stats sd
 #' @examples
-#' fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"), number = c(10,7,45,3,45,67,89,0,12))
-#' summary_statistics(fruit, fruit_type, number)
+#' letter <- data.frame(type = c("A","A","A", "O", "O","O","P","P","P"),number =c(1,7,4,3,45,7,9,0,2))
+#' summary_statistics(letter, number, type)
 #' @export
 summary_statistics <- function (data, x, y) {
   if(!is.numeric(eval(substitute(x), data))) {
