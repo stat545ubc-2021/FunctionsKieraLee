@@ -20,3 +20,7 @@ summary_statistics(data, x, y)
 This function will create columns in the dataset calculating the mean, median, standard
 deviation, max and min of a variable column based on being grouped by a second column
 }
+\examples{
+fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"), number = c(10,7,45,3,45,67,89,0,12))
+summary_statistics(fruit, fruit_type, number)
+}

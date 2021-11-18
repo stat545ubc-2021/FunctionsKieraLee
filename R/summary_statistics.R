@@ -12,6 +12,9 @@
 #' @importFrom dplyr summarise
 #' @importFrom stats median
 #' @importFrom stats sd
+#' @examples
+#' fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"), number = c(10,7,45,3,45,67,89,0,12))
+#' summary_statistics(fruit, fruit_type, number)
 #' @export
 summary_statistics <- function (data, x, y) {
   if(!is.numeric(eval(substitute(x), data))) {
