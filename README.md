@@ -43,7 +43,7 @@ This is a basic example which shows you how to solve a common problem,
 using a simple dataframe, `fruit`:
 
 ``` r
-library(SummaryStatstics)
+suppressMessages(library(SummaryStatstics))
 #if this is a very basic data set that you are working with 
 fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"),
                       number = c(10,7,45,3,45,67,89,0,12))
