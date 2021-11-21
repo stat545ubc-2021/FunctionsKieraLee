@@ -9,7 +9,7 @@ summary_statistics(data, x, y)
 \arguments{
 \item{data}{is the dataset you wish to create the calculated columns within. data should contain the columns of interest}
 
-\item{x}{is the column you wish to calculate the summary statistics on}
+\item{x}{is the column you wish to calculate the summary statistics on, must be numeric}
 
 \item{y}{is the column that you will be grouping your data with}
 }

@@ -5,6 +5,15 @@ test_that("Summary Statistics Outputs a tibble", {
   #testing that the output is a tibble
   expect_is(summary_statistics(fruit, number, fruit_type), "tbl")})
 
+test_that("X variable is numeric", {
+  #creating a simple data frame to test this on
+  fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"),
+                      number = c(10,7,45,3,45,67,89,0,12),
+                      colour = c("red", "red", "red", "orange", "orange", "orange", "purple", "purple", "purple"))
+  #testing that the x variable must be numeric
+  expect_error(summary_statistics(fruit, colour, fruit_type), "ERROR, this function only works for numeric input!
+You have provided an object of class: character")})
+
 test_that("Summary Statistics can deal with wrong objects", {
   fruit <- data.frame(fruit_type = c("apple","apple","apple", "orange", "orange","orange","plum","plum","plum"),
                       number = c(10,7,45,3,45,67,89,0,12))
